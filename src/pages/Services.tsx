@@ -1,0 +1,181 @@
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { Database, Cloud, Cog, HeadphonesIcon, ArrowUpCircle, Layers } from "lucide-react";
+
+const Services = () => {
+  const oracleServices = [
+    {
+      icon: <Database className="w-10 h-10 text-primary" />,
+      title: "Oracle EBS Migration",
+      description: "Seamless migration of your Oracle E-Business Suite to newer versions or cloud platforms with minimal disruption.",
+    },
+    {
+      icon: <ArrowUpCircle className="w-10 h-10 text-primary" />,
+      title: "Oracle EBS Support & Upgrade",
+      description: "Comprehensive support and upgrade services to keep your Oracle EBS running optimally and securely.",
+    },
+    {
+      icon: <Layers className="w-10 h-10 text-primary" />,
+      title: "Oracle Fusion ERP",
+      description: "Full-scale implementations covering Financials, SCM, HCM, and Customer Applications modules.",
+    },
+  ];
+
+  const salesforceServices = [
+    {
+      icon: <Cloud className="w-10 h-10 text-primary" />,
+      title: "Salesforce Implementation",
+      description: "End-to-end Salesforce deployment tailored to your business processes and industry requirements.",
+    },
+    {
+      icon: <Cog className="w-10 h-10 text-primary" />,
+      title: "Customization & Integration",
+      description: "Custom development and seamless integration with your existing systems and third-party applications.",
+    },
+    {
+      icon: <HeadphonesIcon className="w-10 h-10 text-primary" />,
+      title: "Salesforce Support",
+      description: "Ongoing support, maintenance, and optimization services for your Salesforce environment.",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navigation />
+
+      <main className="flex-1">
+        {/* Hero */}
+        <section className="bg-primary text-primary-foreground py-16">
+          <div className="container mx-auto px-4">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+            <p className="text-xl opacity-90 max-w-3xl">
+              Comprehensive Oracle and Salesforce solutions for enterprise transformation
+            </p>
+          </div>
+        </section>
+
+        {/* Oracle Practice */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Oracle Practice</h2>
+                <p className="text-xl text-muted-foreground">
+                  Expert Oracle solutions from migration to full-scale ERP implementations
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-12">
+                {oracleServices.map((service) => (
+                  <Card key={service.title} className="shadow-card hover:shadow-card-hover transition-all">
+                    <CardHeader>
+                      <div className="mb-4">{service.icon}</div>
+                      <CardTitle className="text-xl">{service.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">{service.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              <Card className="bg-secondary border-none">
+                <CardContent className="pt-6">
+                  <h3 className="text-xl font-semibold mb-4">Oracle Fusion Modules</h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <h4 className="font-semibold mb-2">Financials</h4>
+                      <ul className="text-muted-foreground space-y-1 list-disc list-inside">
+                        <li>General Ledger</li>
+                        <li>Accounts Payable & Receivable</li>
+                        <li>Cash Management</li>
+                        <li>Fixed Assets</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Supply Chain Management</h4>
+                      <ul className="text-muted-foreground space-y-1 list-disc list-inside">
+                        <li>Procurement</li>
+                        <li>Inventory Management</li>
+                        <li>Order Management</li>
+                        <li>Manufacturing</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Human Capital Management</h4>
+                      <ul className="text-muted-foreground space-y-1 list-disc list-inside">
+                        <li>Core HR</li>
+                        <li>Payroll</li>
+                        <li>Talent Management</li>
+                        <li>Workforce Management</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Customer Applications</h4>
+                      <ul className="text-muted-foreground space-y-1 list-disc list-inside">
+                        <li>Sales Cloud</li>
+                        <li>Service Cloud</li>
+                        <li>Marketing</li>
+                        <li>Commerce</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Salesforce Solutions */}
+        <section className="py-20 bg-secondary">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Salesforce Solutions</h2>
+                <p className="text-xl text-muted-foreground">
+                  Complete Salesforce services from implementation to ongoing support
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                {salesforceServices.map((service) => (
+                  <Card key={service.title} className="shadow-card hover:shadow-card-hover transition-all">
+                    <CardHeader>
+                      <div className="mb-4">{service.icon}</div>
+                      <CardTitle className="text-xl">{service.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">{service.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-20 bg-primary text-primary-foreground">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Get Started?
+            </h2>
+            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+              Contact us to discuss how our services can benefit your organization
+            </p>
+            <Button asChild size="lg" variant="secondary" className="text-lg">
+              <Link to="/contact">Contact Our Team</Link>
+            </Button>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Services;
