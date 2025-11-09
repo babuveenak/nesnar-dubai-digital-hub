@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import nesnarLogo from "@/assets/nesnar-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +21,8 @@ const Navigation = () => {
     <nav className="bg-background border-b border-border sticky top-0 z-50 backdrop-blur-sm bg-background/95">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">NESNAR</div>
+          <Link to="/" className="flex items-center">
+            <img src={nesnarLogo} alt="Nesnar Software Services" className="h-10" />
           </Link>
 
           {/* Desktop Navigation */}

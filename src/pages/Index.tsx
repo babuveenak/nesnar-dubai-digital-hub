@@ -4,6 +4,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Database, Cloud, Users, Zap, Shield, TrendingUp } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
+import oracleServices from "@/assets/oracle-services.jpg";
+import salesforceServices from "@/assets/salesforce-services.jpg";
 
 const Index = () => {
   const services = [
@@ -42,8 +45,13 @@ const Index = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-hero-gradient text-primary-foreground py-20 md:py-32">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-hero-gradient text-primary-foreground py-20 md:py-32 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${heroBackground})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Software is complex.<br />We make it simple.
@@ -74,8 +82,12 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service) => (
-              <Card key={service.title} className="shadow-card hover:shadow-card-hover transition-all duration-300">
+            {services.map((service, index) => (
+              <Card key={service.title} className="shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden">
+                <div className="h-48 bg-cover bg-center" style={{ 
+                  backgroundImage: `url(${index === 0 ? oracleServices : index === 1 ? salesforceServices : ''})`,
+                  backgroundColor: index > 1 ? 'hsl(var(--secondary))' : undefined
+                }} />
                 <CardContent className="pt-6">
                   <div className="mb-4">{service.icon}</div>
                   <h3 className="text-xl font-semibold mb-2">{service.title}</h3>

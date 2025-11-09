@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import nesnarLogo from "@/assets/nesnar-logo.png";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-primary mb-4">NESNAR</h3>
+            <img src={nesnarLogo} alt="Nesnar Software Services" className="h-8 mb-4" />
             <p className="text-muted-foreground mb-4">
               Software is complex. We make it simple.
             </p>
