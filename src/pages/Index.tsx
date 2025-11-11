@@ -8,10 +8,10 @@ import StatisticsCounter from "@/components/StatisticsCounter";
 import TechnologyCarousel from "@/components/TechnologyCarousel";
 import { Database, Cloud, Users, Zap, Shield, TrendingUp } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
-import heroBackground from "@/assets/hero-background.jpg";
-import aiHumanCollaboration from "@/assets/ai-human-collaboration.jpg";
-import techInfrastructure from "@/assets/tech-infrastructure.jpg";
-import enterpriseSoftware from "@/assets/enterprise-software.jpg";
+import heroSlide1 from "@/assets/hero-slide-1.jpg";
+import heroSlide2 from "@/assets/hero-slide-2.jpg";
+import heroSlide3 from "@/assets/hero-slide-3.jpg";
+import heroSlide4 from "@/assets/hero-slide-4.jpg";
 import oracleServices from "@/assets/oracle-services.jpg";
 import salesforceServices from "@/assets/salesforce-services.jpg";
 
@@ -49,22 +49,22 @@ const Index = () => {
 
   const heroSlides = [
     {
-      image: aiHumanCollaboration,
+      image: heroSlide1,
       title: "Software is complex. We make it simple.",
       subtitle: "Leading Oracle and Salesforce consulting partner serving enterprises across UAE, GCC, and MENA regions since 2015.",
     },
     {
-      image: heroBackground,
+      image: heroSlide2,
       title: "Transform Your Enterprise",
       subtitle: "Expert Oracle and Salesforce solutions driving digital transformation for leading organizations.",
     },
     {
-      image: techInfrastructure,
+      image: heroSlide3,
       title: "Cloud-Native Innovation",
       subtitle: "Scalable cloud solutions and enterprise ERP implementations tailored to your business needs.",
     },
     {
-      image: enterpriseSoftware,
+      image: heroSlide4,
       title: "Enterprise Excellence",
       subtitle: "70+ professionals delivering world-class technology solutions across 15+ countries.",
     },
@@ -75,7 +75,7 @@ const Index = () => {
       <Navigation />
 
       {/* Hero Carousel Section */}
-      <section className="relative">
+      <section className="relative bg-background py-8">
         <Carousel
           opts={{
             align: "start",
@@ -91,31 +91,36 @@ const Index = () => {
           <CarouselContent>
             {heroSlides.map((slide, index) => (
               <CarouselItem key={index}>
-                <div className="relative h-[600px] md:h-[700px]">
-                  <div 
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: `url(${slide.image})` }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
-                  <div className="relative z-10 h-full flex items-center">
-                    <div className="container mx-auto px-4">
-                      <div className="max-w-4xl mx-auto text-center text-primary-foreground">
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
-                          {slide.title}
-                        </h1>
-                        <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in">
-                          {slide.subtitle}
-                        </p>
-                        {index === 0 && (
-                          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-                            <Button asChild size="lg" variant="secondary" className="text-lg">
-                              <Link to="/contact">Contact Us</Link>
-                            </Button>
-                            <Button asChild size="lg" variant="outline" className="text-lg bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                              <Link to="/services">Our Services</Link>
-                            </Button>
+                <div className="container mx-auto px-4">
+                  <div className="relative rounded-2xl overflow-hidden border-8 border-primary shadow-2xl">
+                    <div className="relative h-[500px] md:h-[600px]">
+                      <img 
+                        src={slide.image}
+                        alt={slide.title}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/75 to-transparent" />
+                      <div className="absolute inset-0 flex items-center">
+                        <div className="container mx-auto px-8 md:px-16">
+                          <div className="max-w-3xl">
+                            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground animate-fade-in">
+                              {slide.title}
+                            </h1>
+                            <p className="text-xl md:text-2xl mb-8 text-muted-foreground animate-fade-in">
+                              {slide.subtitle}
+                            </p>
+                            {index === 0 && (
+                              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
+                                <Button asChild size="lg" variant="default" className="text-lg">
+                                  <Link to="/contact">Contact Us</Link>
+                                </Button>
+                                <Button asChild size="lg" variant="outline" className="text-lg">
+                                  <Link to="/services">Our Services</Link>
+                                </Button>
+                              </div>
+                            )}
                           </div>
-                        )}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -123,8 +128,8 @@ const Index = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-4 bg-background/80 hover:bg-background" />
-          <CarouselNext className="right-4 bg-background/80 hover:bg-background" />
+          <CarouselPrevious className="left-8 bg-background/80 hover:bg-background" />
+          <CarouselNext className="right-8 bg-background/80 hover:bg-background" />
         </Carousel>
       </section>
 
