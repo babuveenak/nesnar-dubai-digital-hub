@@ -1,9 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ServiceComparison from "@/components/ServiceComparison";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Database, Cloud, Cog, HeadphonesIcon, ArrowUpCircle, Layers } from "lucide-react";
+import oracleLogo from "@/assets/oracle-logo.png";
 
 const Services = () => {
   const oracleServices = [
@@ -62,7 +64,10 @@ const Services = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Oracle Practice</h2>
+                <div className="flex items-center justify-center gap-4 mb-4">
+                  <img src={oracleLogo} alt="Oracle" className="h-12 md:h-16" />
+                  <h2 className="text-3xl md:text-4xl font-bold">Oracle Practice</h2>
+                </div>
                 <p className="text-xl text-muted-foreground">
                   Expert Oracle solutions from migration to full-scale ERP implementations
                 </p>
@@ -156,6 +161,9 @@ const Services = () => {
             </div>
           </div>
         </section>
+
+        {/* Service Comparison */}
+        <ServiceComparison />
 
         {/* CTA */}
         <section className="py-20 bg-primary text-primary-foreground">

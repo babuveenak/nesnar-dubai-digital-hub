@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import StatisticsCounter from "@/components/StatisticsCounter";
+import TechnologyCarousel from "@/components/TechnologyCarousel";
 import { Database, Cloud, Users, Zap, Shield, TrendingUp } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 import oracleServices from "@/assets/oracle-services.jpg";
@@ -134,6 +136,12 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Statistics Counter */}
+      <StatisticsCounter />
+
+      {/* Technology Carousel */}
+      <TechnologyCarousel />
 
       {/* Industries */}
       <section className="py-20 bg-background">
