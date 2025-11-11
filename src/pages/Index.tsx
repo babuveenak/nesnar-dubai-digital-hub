@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import StatisticsCounter from "@/components/StatisticsCounter";
 import TechnologyCarousel from "@/components/TechnologyCarousel";
 import { Database, Cloud, Users, Zap, Shield, TrendingUp } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
 import heroBackground from "@/assets/hero-background.jpg";
+import aiHumanCollaboration from "@/assets/ai-human-collaboration.jpg";
+import techInfrastructure from "@/assets/tech-infrastructure.jpg";
+import enterpriseSoftware from "@/assets/enterprise-software.jpg";
 import oracleServices from "@/assets/oracle-services.jpg";
 import salesforceServices from "@/assets/salesforce-services.jpg";
 
@@ -42,35 +47,85 @@ const Index = () => {
     "Healthcare",
   ];
 
+  const heroSlides = [
+    {
+      image: aiHumanCollaboration,
+      title: "Software is complex. We make it simple.",
+      subtitle: "Leading Oracle and Salesforce consulting partner serving enterprises across UAE, GCC, and MENA regions since 2015.",
+    },
+    {
+      image: heroBackground,
+      title: "Transform Your Enterprise",
+      subtitle: "Expert Oracle and Salesforce solutions driving digital transformation for leading organizations.",
+    },
+    {
+      image: techInfrastructure,
+      title: "Cloud-Native Innovation",
+      subtitle: "Scalable cloud solutions and enterprise ERP implementations tailored to your business needs.",
+    },
+    {
+      image: enterpriseSoftware,
+      title: "Enterprise Excellence",
+      subtitle: "70+ professionals delivering world-class technology solutions across 15+ countries.",
+    },
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="relative bg-hero-gradient text-primary-foreground py-20 md:py-32 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: `url(${heroBackground})` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Software is complex.<br />We make it simple.
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 opacity-90">
-              Leading Oracle and Salesforce consulting partner serving enterprises across UAE, GCC, and MENA regions since 2015.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="text-lg">
-                <Link to="/contact">Contact Us</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="text-lg bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                <Link to="/services">Our Services</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
+      {/* Hero Carousel Section */}
+      <section className="relative">
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 6000,
+            }),
+          ]}
+          className="w-full"
+        >
+          <CarouselContent>
+            {heroSlides.map((slide, index) => (
+              <CarouselItem key={index}>
+                <div className="relative h-[600px] md:h-[700px]">
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url(${slide.image})` }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
+                  <div className="relative z-10 h-full flex items-center">
+                    <div className="container mx-auto px-4">
+                      <div className="max-w-4xl mx-auto text-center text-primary-foreground">
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
+                          {slide.title}
+                        </h1>
+                        <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in">
+                          {slide.subtitle}
+                        </p>
+                        {index === 0 && (
+                          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
+                            <Button asChild size="lg" variant="secondary" className="text-lg">
+                              <Link to="/contact">Contact Us</Link>
+                            </Button>
+                            <Button asChild size="lg" variant="outline" className="text-lg bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                              <Link to="/services">Our Services</Link>
+                            </Button>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4 bg-background/80 hover:bg-background" />
+          <CarouselNext className="right-4 bg-background/80 hover:bg-background" />
+        </Carousel>
       </section>
 
       {/* Services Overview */}
