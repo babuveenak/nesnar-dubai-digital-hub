@@ -163,7 +163,9 @@ const Contact = () => {
                         <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                         <div>
                           <h3 className="font-semibold mb-1">Email</h3>
-                          <p className="text-muted-foreground">sales@nesnar.com</p>
+                          <a href="mailto:sales@nesnar.com" className="text-muted-foreground hover:text-primary transition-colors">
+                            sales@nesnar.com
+                          </a>
                         </div>
                       </div>
                     </div>
