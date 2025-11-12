@@ -9,13 +9,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <img src={nesnarLogo} alt="Nesnar Software Services" className="h-8 mb-4" />
+            <img src={nesnarLogo} alt="Nesnar Software Services" className="h-32 md:h-44 mb-4" />
             <p className="text-muted-foreground mb-4">
               Software is complex. We make it simple.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/nesnar-technologies-6a446610b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -77,7 +77,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Mail size={18} />
-                <span>info@nesnar.com</span>
+                <span>sales@nesnar.com</span>
               </li>
             </ul>
           </div>

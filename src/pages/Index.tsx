@@ -14,6 +14,8 @@ import heroSlide3 from "@/assets/hero-slide-3.jpg";
 import heroSlide4 from "@/assets/hero-slide-4.jpg";
 import oracleServices from "@/assets/oracle-services.jpg";
 import salesforceServices from "@/assets/salesforce-services.jpg";
+import digitalTransformation from "@/assets/digital-transformation.jpg";
+import managedServices from "@/assets/managed-services.jpg";
 
 const Index = () => {
   const services = [
@@ -144,19 +146,28 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => (
-              <Card key={service.title} className="shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden">
-                <div className="h-48 bg-cover bg-center" style={{ 
-                  backgroundImage: `url(${index === 0 ? oracleServices : index === 1 ? salesforceServices : ''})`,
-                  backgroundColor: index > 1 ? 'hsl(var(--secondary))' : undefined
-                }} />
-                <CardContent className="pt-6">
-                  <div className="mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {services.map((service, index) => {
+              const getBackgroundImage = () => {
+                if (index === 0) return oracleServices;
+                if (index === 1) return salesforceServices;
+                if (index === 2) return digitalTransformation;
+                if (index === 3) return managedServices;
+                return '';
+              };
+              
+              return (
+                <Card key={service.title} className="shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden">
+                  <div className="h-48 bg-cover bg-center" style={{ 
+                    backgroundImage: `url(${getBackgroundImage()})`
+                  }} />
+                  <CardContent className="pt-6">
+                    <div className="mb-4">{service.icon}</div>
+                    <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                    <p className="text-muted-foreground">{service.description}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
