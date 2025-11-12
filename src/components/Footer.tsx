@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <img src={nesnarLogo} alt="Nesnar Software Services" className="h-32 md:h-44 mb-4" />
+            <img src={nesnarLogo} alt="Nesnar Software Services" className="h-20 md:h-28 mb-4" />
             <p className="text-muted-foreground mb-4">
               Software is complex. We make it simple.
             </p>
