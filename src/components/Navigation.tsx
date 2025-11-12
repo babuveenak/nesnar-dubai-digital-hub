@@ -20,9 +20,9 @@ const Navigation = () => {
   return (
     <nav className="bg-background border-b border-border sticky top-0 z-50 backdrop-blur-sm bg-background/95">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24 md:h-32">
           <Link to="/" className="flex items-center">
-            <img src={nesnarLogo} alt="Nesnar Software Services" className="h-32 md:h-44" />
+            <img src={nesnarLogo} alt="Nesnar Software Services" className="h-20 md:h-28" />
           </Link>
 
           {/* Desktop Navigation */}
