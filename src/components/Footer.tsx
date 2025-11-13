@@ -69,7 +69,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-muted-foreground">
                 <MapPin size={18} className="mt-1 flex-shrink-0" />
-                <span>Dubai, United Arab Emirates</span>
+                <span>Emirates Financial Towers, DIFC, Dubai, United Arab Emirates</span>
               </li>
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Phone size={18} />

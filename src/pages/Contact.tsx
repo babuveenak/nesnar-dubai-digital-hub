@@ -146,7 +146,7 @@ const Contact = () => {
                           <h3 className="font-semibold mb-1">Dubai Headquarters</h3>
                           <p className="text-muted-foreground">
                             Nesnar Software Services LLC<br />
-                            Dubai, United Arab Emirates
+                            Emirates Financial Towers, DIFC, Dubai, United Arab Emirates
                           </p>
                         </div>
                       </div>

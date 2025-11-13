@@ -7,15 +7,21 @@ const Industries = () => {
   const industries = [
     {
       icon: <Building2 className="w-12 h-12 text-primary" />,
-      title: "Public Sector",
-      description: "Empowering government organizations with secure, scalable enterprise solutions that enhance citizen services and operational efficiency.",
-      solutions: ["Oracle EBS", "Oracle Fusion", "Citizen Portal Integration", "Compliance Management"],
+      title: "Real Estate",
+      description: "Transform property management and real estate operations with integrated solutions for portfolio management, tenant services, and asset optimization.",
+      solutions: ["Property Management", "Oracle EBS", "Salesforce CRM", "Asset Management"],
     },
     {
       icon: <ShoppingCart className="w-12 h-12 text-primary" />,
       title: "Retail",
       description: "Transform retail operations with integrated systems for inventory, customer engagement, and omnichannel commerce.",
       solutions: ["Salesforce Commerce", "Oracle Retail", "Inventory Management", "Customer Experience"],
+    },
+    {
+      icon: <Building2 className="w-12 h-12 text-primary" />,
+      title: "Public Sector",
+      description: "Empowering government organizations with secure, scalable enterprise solutions that enhance citizen services and operational efficiency.",
+      solutions: ["Oracle EBS", "Oracle Fusion", "Citizen Portal Integration", "Compliance Management"],
     },
     {
       icon: <Factory className="w-12 h-12 text-primary" />,
@@ -28,12 +34,6 @@ const Industries = () => {
       title: "Finance",
       description: "Deliver secure, compliant financial services with robust ERP and CRM platforms designed for the financial sector.",
       solutions: ["Oracle Financials", "Compliance & Risk", "Customer Onboarding", "Regulatory Reporting"],
-    },
-    {
-      icon: <Heart className="w-12 h-12 text-primary" />,
-      title: "Healthcare",
-      description: "Enable better patient care and operational excellence with integrated healthcare management solutions.",
-      solutions: ["Patient Management", "Oracle HCM", "Salesforce Health Cloud", "Compliance Systems"],
     },
   ];
 
