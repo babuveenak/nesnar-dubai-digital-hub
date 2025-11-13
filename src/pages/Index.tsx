@@ -42,11 +42,11 @@ const Index = () => {
   ];
 
   const industries = [
-    "Public Sector",
+    "Real Estate",
     "Retail",
+    "Public Sector",
     "Manufacturing",
     "Finance",
-    "Healthcare",
   ];
 
   const heroSlides = [
