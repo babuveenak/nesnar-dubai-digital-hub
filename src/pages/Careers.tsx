@@ -4,60 +4,46 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Users, TrendingUp, Globe, Award } from "lucide-react";
-
 const Careers = () => {
-  const benefits = [
-    {
-      icon: <TrendingUp className="w-10 h-10 text-primary" />,
-      title: "Career Growth",
-      description: "Continuous learning opportunities and clear career progression paths",
-    },
-    {
-      icon: <Globe className="w-10 h-10 text-primary" />,
-      title: "Global Exposure",
-      description: "Work with international clients",
-    },
-    {
-      icon: <Award className="w-10 h-10 text-primary" />,
-      title: "Cutting-Edge Technology",
-      description: "Work with Latest technologies",
-    },
-    {
-      icon: <Users className="w-10 h-10 text-primary" />,
-      title: "Collaborative Culture",
-      description: "Be part of a team of passionate professionals",
-    },
-  ];
-
-  const openings = [
-    {
-      title: "Oracle Fusion Consultant",
-      location: "Dubai, UAE",
-      type: "Full-time",
-      experience: "5+ years",
-    },
-    {
-      title: "Salesforce Developer",
-      location: "Dubai, UAE / Remote",
-      type: "Full-time",
-      experience: "3+ years",
-    },
-    {
-      title: "Oracle EBS Technical Consultant",
-      location: "Dubai, UAE",
-      type: "Full-time",
-      experience: "4+ years",
-    },
-    {
-      title: "Salesforce Admin",
-      location: "Dubai, UAE",
-      type: "Full-time",
-      experience: "2+ years",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  const benefits = [{
+    icon: <TrendingUp className="w-10 h-10 text-primary" />,
+    title: "Career Growth",
+    description: "Continuous learning opportunities and clear career progression paths"
+  }, {
+    icon: <Globe className="w-10 h-10 text-primary" />,
+    title: "Global Exposure",
+    description: "Work with international clients"
+  }, {
+    icon: <Award className="w-10 h-10 text-primary" />,
+    title: "Cutting-Edge Technology",
+    description: "Work with Latest technologies"
+  }, {
+    icon: <Users className="w-10 h-10 text-primary" />,
+    title: "Collaborative Culture",
+    description: "Be part of a team of passionate professionals"
+  }];
+  const openings = [{
+    title: "Oracle Fusion Consultant",
+    location: "Dubai, UAE",
+    type: "Full-time",
+    experience: "5+ years"
+  }, {
+    title: "Salesforce Developer",
+    location: "Dubai, UAE / Remote",
+    type: "Full-time",
+    experience: "3+ years"
+  }, {
+    title: "Oracle EBS Technical Consultant",
+    location: "Dubai, UAE",
+    type: "Full-time",
+    experience: "4+ years"
+  }, {
+    title: "Salesforce Admin",
+    location: "Dubai, UAE",
+    type: "Full-time",
+    experience: "2+ years"
+  }];
+  return <div className="min-h-screen flex flex-col">
       <Navigation />
 
       <main className="flex-1">
@@ -82,61 +68,19 @@ const Careers = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {benefits.map((benefit) => (
-                <Card key={benefit.title} className="text-center shadow-card hover:shadow-card-hover transition-all">
+              {benefits.map(benefit => <Card key={benefit.title} className="text-center shadow-card hover:shadow-card-hover transition-all">
                   <CardContent className="pt-6">
                     <div className="flex justify-center mb-4">{benefit.icon}</div>
                     <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
                     <p className="text-sm text-muted-foreground">{benefit.description}</p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </section>
 
         {/* Open Positions */}
-        <section className="py-20 bg-secondary">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12">Current Openings</h2>
-              
-              <div className="space-y-4">
-                {openings.map((job, index) => (
-                  <Card key={index} className="shadow-card hover:shadow-card-hover transition-all">
-                    <CardContent className="pt-6">
-                      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                        <div className="flex-1">
-                          <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
-                          <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-                            <span>📍 {job.location}</span>
-                            <span>💼 {job.type}</span>
-                            <span>⭐ {job.experience}</span>
-                          </div>
-                        </div>
-                        <Button asChild>
-                          <Link to="/contact">Apply Now</Link>
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-
-              <Card className="mt-8 bg-background border-primary/20">
-                <CardContent className="pt-6 text-center">
-                  <h3 className="text-xl font-semibold mb-3">Don't see the right position?</h3>
-                  <p className="text-muted-foreground mb-4">
-                    We're always looking for talented professionals. Send us your resume!
-                  </p>
-                  <Button asChild variant="outline">
-                    <Link to="/contact">Contact HR Team</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Employee Value Proposition */}
         <section className="py-20 bg-background">
@@ -159,8 +103,6 @@ const Careers = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Careers;
