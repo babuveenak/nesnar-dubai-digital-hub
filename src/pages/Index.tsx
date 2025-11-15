@@ -53,7 +53,7 @@ const Index = () => {
     {
       image: heroSlide1,
       title: "Software is complex. We make it simple.",
-      subtitle: "Leading Oracle and Salesforce consulting partner serving enterprises across UAE, GCC, and MENA regions since 2015.",
+      subtitle: "A premier consulting partner in Oracle, Salesforce, and Mobility solutions, empowering enterprises across the UAE, UK, USA, Australia, and India since 2015.",
     },
     {
       image: heroSlide2,
