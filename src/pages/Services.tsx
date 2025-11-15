@@ -4,7 +4,7 @@ import ServiceComparison from "@/components/ServiceComparison";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Database, Cloud, Cog, HeadphonesIcon, ArrowUpCircle, Layers } from "lucide-react";
+import { Database, Cloud, Cog, HeadphonesIcon, ArrowUpCircle, Layers, Smartphone, Tablet, Zap } from "lucide-react";
 import oracleLogo from "@/assets/oracle-logo.png";
 const Services = () => {
   const oracleServices = [{
@@ -32,6 +32,20 @@ const Services = () => {
     icon: <HeadphonesIcon className="w-10 h-10 text-primary" />,
     title: "Salesforce Support",
     description: "Ongoing support, maintenance, and optimization services for your Salesforce environment."
+  }];
+
+  const mobilityServices = [{
+    icon: <Smartphone className="w-10 h-10 text-primary" />,
+    title: "Mobile App Development",
+    description: "Native and cross-platform mobile applications built with modern frameworks and best practices."
+  }, {
+    icon: <Tablet className="w-10 h-10 text-primary" />,
+    title: "Enterprise Mobility Solutions",
+    description: "Comprehensive mobility strategies for workforce enablement and business process optimization."
+  }, {
+    icon: <Zap className="w-10 h-10 text-primary" />,
+    title: "Mobile App Modernization",
+    description: "Transform legacy mobile applications with modern architectures, enhanced UX, and improved performance."
   }];
   return <div className="min-h-screen flex flex-col">
       <Navigation />
@@ -93,6 +107,32 @@ const Services = () => {
 
               <div className="grid md:grid-cols-3 gap-6">
                 {salesforceServices.map(service => <Card key={service.title} className="shadow-card hover:shadow-card-hover transition-all">
+                    <CardHeader>
+                      <div className="mb-4">{service.icon}</div>
+                      <CardTitle className="text-xl">{service.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">{service.description}</p>
+                    </CardContent>
+                  </Card>)}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Mobility Practice */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Mobility Practice</h2>
+                <p className="text-xl text-muted-foreground">
+                  Cutting-edge mobile solutions for modern enterprise needs
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                {mobilityServices.map(service => <Card key={service.title} className="shadow-card hover:shadow-card-hover transition-all">
                     <CardHeader>
                       <div className="mb-4">{service.icon}</div>
                       <CardTitle className="text-xl">{service.title}</CardTitle>
