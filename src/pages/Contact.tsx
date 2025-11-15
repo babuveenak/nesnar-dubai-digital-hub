@@ -112,9 +112,8 @@ const Contact = () => {
                         <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                         <div>
                           <h3 className="font-semibold mb-1">Dubai Headquarters</h3>
-                          <p className="text-muted-foreground">
-                            Nesnar Software Services LLC
-Emirates Financial Towers, DIFC 
+                          <p className="text-muted-foreground">Nesnar Software Services LLC 
+Emirates Financial Towers, DIFC  
 Dubai, United Arab Emirates<br />
                             Emirates Financial Towers, DIFC, Dubai, United Arab Emirates
                           </p>
