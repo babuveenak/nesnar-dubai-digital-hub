@@ -12,6 +12,7 @@ import heroSlide1 from "@/assets/hero-slide-1.jpg";
 import heroSlide2 from "@/assets/hero-slide-2.jpg";
 import heroSlide3 from "@/assets/hero-slide-3.jpg";
 import heroSlide4 from "@/assets/hero-slide-4.jpg";
+import oracleCloudLogo from "@/assets/oracle-cloud-logo.png";
 import oracleServices from "@/assets/oracle-services.jpg";
 import salesforceServices from "@/assets/salesforce-services.jpg";
 import digitalTransformation from "@/assets/digital-transformation.jpg";
@@ -21,7 +22,7 @@ const Index = () => {
   const services = [
     {
       title: "Oracle Practice",
-      icon: <Database className="w-12 h-12 text-primary" />,
+      icon: <img src={oracleCloudLogo} alt="Oracle Cloud" className="w-12 h-12" />,
       description: "Oracle EBS Migration, Support & Upgrade, and Oracle Fusion ERP implementations across Financials, SCM, HCM, and Customer Applications.",
     },
     {
