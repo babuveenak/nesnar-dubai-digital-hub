@@ -96,7 +96,7 @@ const Services = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Salesforce Solutions</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Salesforce Practice</h2>
                 <p className="text-xl text-muted-foreground">
                   Complete Salesforce services from implementation to ongoing support
                 </p>
