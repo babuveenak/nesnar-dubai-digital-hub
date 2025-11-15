@@ -12,9 +12,7 @@ const Clients = () => {
         <section className="bg-primary text-primary-foreground py-16">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Clients & Partners</h1>
-            <p className="text-xl opacity-90 max-w-3xl">
-              Trusted by leading organizations across the UAE, GCC, and MENA regions
-            </p>
+            <p className="text-xl opacity-90 max-w-3xl">Trusted by leading organizations across regions</p>
           </div>
         </section>
 
