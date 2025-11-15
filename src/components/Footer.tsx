@@ -12,7 +12,7 @@ const Footer = () => {
               Software is complex. We make it simple.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/in/nesnar-technologies-6a446610b/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/company/nesnar/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={20} />
               </a>
               <a href="https://facebook.com/nesnar" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
