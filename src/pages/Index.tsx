@@ -12,7 +12,6 @@ import heroSlide1 from "@/assets/hero-slide-1.jpg";
 import heroSlide2 from "@/assets/hero-slide-2.jpg";
 import heroSlide3 from "@/assets/hero-slide-3.jpg";
 import heroSlide4 from "@/assets/hero-slide-4.jpg";
-import oracleCloudLogo from "@/assets/oracle-cloud-logo.png";
 import oracleServices from "@/assets/oracle-services.jpg";
 import salesforceServices from "@/assets/salesforce-services.jpg";
 import digitalTransformation from "@/assets/digital-transformation.jpg";
@@ -20,7 +19,7 @@ import managedServices from "@/assets/managed-services.jpg";
 const Index = () => {
   const services = [{
     title: "Oracle Practice",
-    icon: <img src={oracleCloudLogo} alt="Oracle Cloud" className="w-12 h-12" />,
+    icon: <Database className="w-12 h-12 text-primary" />,
     description: "Implementation of Oracle Fusion, Upgrades of Oracle EBS, Migration to Cloud Platforms, and Comprehensive ERP Support"
   }, {
     title: "Salesforce Practice",
