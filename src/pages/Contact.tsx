@@ -70,7 +70,7 @@ const Contact = () => {
                       <label htmlFor="email" className="block text-sm font-medium mb-2">
                         Email Address *
                       </label>
-                      <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="john@company.com" />
+                      <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="Sales@nesnar.com" />
                     </div>
 
                     <div>
