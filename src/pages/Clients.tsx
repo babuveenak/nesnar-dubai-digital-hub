@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, Users, Globe, TrendingUp } from "lucide-react";
+import clientLogos from "@/assets/client-logos.png";
 const Clients = () => {
   return <div className="min-h-screen flex flex-col">
       <Navigation />
@@ -61,23 +62,13 @@ const Clients = () => {
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-center mb-12">Our Happy Customers</h2>
               
-              <div className="grid md:grid-cols-3 gap-6 mb-12">
-                <Card className="text-center shadow-card">
-                  
-                </Card>
-
-                <Card className="text-center shadow-card">
-                  
-                </Card>
-
-                <Card className="text-center shadow-card">
-                  
-                </Card>
+              <div className="bg-card rounded-lg p-8 shadow-card">
+                <img 
+                  src={clientLogos} 
+                  alt="Our valued clients including FTG Development, Emaar, MAG, Imdaad, Ali Oman Al Owais Group, Al-Futtaim, Carillion, Securitas, Public Authority for Electricity & Water, Emirates Post, Eros Group, and Dubai Investment Real Estate" 
+                  className="w-full h-auto"
+                />
               </div>
-
-              <Card className="shadow-card">
-                
-              </Card>
             </div>
           </div>
         </section>
