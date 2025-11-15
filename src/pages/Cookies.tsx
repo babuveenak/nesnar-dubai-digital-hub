@@ -39,7 +39,7 @@ const Cookies = () => {
               </p>
 
               <h2 className="text-2xl font-bold mt-8 mb-4">5. Contact Us</h2>
-              <p className="text-muted-foreground">If you have questions about our Cookie Policy, please contact us at sales@nesnar.com</p>
+              <p className="text-muted-foreground">If you have questions about our Cookie Policy, please contact us at info@nesnar.com</p>
             </div>
           </div>
         </section>
