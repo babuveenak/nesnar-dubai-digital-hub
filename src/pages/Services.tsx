@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Database, Cloud, Cog, HeadphonesIcon, ArrowUpCircle, Layers, Smartphone, Tablet, Zap } from "lucide-react";
 import oracleLogo from "@/assets/oracle-logo.png";
+import salesforceLogo from "@/assets/salesforce-logo.png";
 const Services = () => {
   const oracleServices = [{
     icon: <Database className="w-10 h-10 text-primary" />,
@@ -96,7 +97,10 @@ const Services = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Salesforce Practice</h2>
+                <div className="flex items-center justify-center gap-4 mb-4">
+                  <img src={salesforceLogo} alt="Salesforce" className="h-12 md:h-16" />
+                  <h2 className="text-3xl md:text-4xl font-bold">Salesforce Practice</h2>
+                </div>
                 <p className="text-xl text-muted-foreground">
                   Complete Salesforce services from implementation to ongoing support
                 </p>
