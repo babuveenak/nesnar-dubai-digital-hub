@@ -25,7 +25,9 @@ const About = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <div>
                 <h2 className="text-3xl font-bold mb-6">Company Overview</h2>
-                
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  Nesnar is a leading digital solutions and technology services company, founded in 2015, with operations in the UAE, UK, USA, Australia, and India. The company partners with global organizations to drive impactful digital transformation. With a strong focus on creativity, innovation, and client success, Nesnar delivers solutions that enhance automation, customer experience, business resilience, and overall performance. Leveraging deep domain expertise, Nesnar helps businesses modernize legacy systems, optimize operations, and adopt future-ready digital capabilities. Guided by its values of customer centricity, community commitment, and continuous innovation, Nesnar is dedicated to delivering measurable business outcomes.
+                </p>
               </div>
               <div>
                 <img src={teamCollaboration} alt="Nesnar team collaboration" className="rounded-lg shadow-card-hover w-full" />
