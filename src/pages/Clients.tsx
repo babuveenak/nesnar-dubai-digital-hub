@@ -63,27 +63,15 @@ const Clients = () => {
               
               <div className="grid md:grid-cols-3 gap-6 mb-12">
                 <Card className="text-center shadow-card">
-                  <CardContent className="pt-6">
-                    <Users className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <div className="text-4xl font-bold text-primary mb-2">100+</div>
-                    <p className="text-muted-foreground">Satisfied Clients</p>
-                  </CardContent>
+                  
                 </Card>
 
                 <Card className="text-center shadow-card">
-                  <CardContent className="pt-6">
-                    <Globe className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <div className="text-4xl font-bold text-primary mb-2">15+</div>
-                    <p className="text-muted-foreground">Countries Worldwide</p>
-                  </CardContent>
+                  
                 </Card>
 
                 <Card className="text-center shadow-card">
-                  <CardContent className="pt-6">
-                    <TrendingUp className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <div className="text-4xl font-bold text-primary mb-2">95%</div>
-                    <p className="text-muted-foreground">Client Retention Rate</p>
-                  </CardContent>
+                  
                 </Card>
               </div>
 
