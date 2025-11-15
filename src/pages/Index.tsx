@@ -67,7 +67,7 @@ const Index = () => {
     },
     {
       image: heroSlide4,
-      title: "Enterprise Excellence",
+      title: "Driving Excellence",
       subtitle: "70+ professionals delivering world-class technology solutions across 15+ countries.",
     },
   ];
