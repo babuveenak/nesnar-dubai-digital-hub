@@ -13,6 +13,7 @@ import heroSlide2 from "@/assets/hero-slide-2.jpg";
 import heroSlide3 from "@/assets/hero-slide-3.jpg";
 import heroSlide4 from "@/assets/hero-slide-4.jpg";
 import oracleCloudLogo from "@/assets/oracle-cloud-logo.png";
+import salesforceLogo from "@/assets/salesforce-logo.png";
 import oracleServices from "@/assets/oracle-services.jpg";
 import salesforceServices from "@/assets/salesforce-services.jpg";
 import digitalTransformation from "@/assets/digital-transformation.jpg";
@@ -27,7 +28,7 @@ const Index = () => {
     },
     {
       title: "Salesforce Solutions",
-      icon: <Cloud className="w-12 h-12 text-primary" />,
+      icon: <img src={salesforceLogo} alt="Salesforce" className="w-12 h-12" />,
       description: "End-to-end Salesforce services including implementation, customization, integration, and ongoing support.",
     },
     {
