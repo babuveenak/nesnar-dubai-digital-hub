@@ -63,27 +63,14 @@ const Clients = () => {
               <h2 className="text-3xl font-bold text-center mb-12">Our Happy Customers</h2>
               
               <div className="bg-card rounded-lg p-8 shadow-card">
-                <img 
-                  src={clientLogos} 
-                  alt="Our valued clients including FTG Development, Emaar, MAG, Imdaad, Ali Oman Al Owais Group, Al-Futtaim, Carillion, Securitas, Public Authority for Electricity & Water, Emirates Post, Eros Group, and Dubai Investment Real Estate" 
-                  className="w-full h-auto"
-                />
+                <img src={clientLogos} alt="Our valued clients including FTG Development, Emaar, MAG, Imdaad, Ali Oman Al Owais Group, Al-Futtaim, Carillion, Securitas, Public Authority for Electricity & Water, Emirates Post, Eros Group, and Dubai Investment Real Estate" className="w-full h-auto" />
               </div>
             </div>
           </div>
         </section>
 
         {/* Testimonials Placeholder */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6">What Our Clients Say</h2>
-              <Card className="shadow-card">
-                
-              </Card>
-            </div>
-          </div>
-        </section>
+        
       </main>
 
       <Footer />
