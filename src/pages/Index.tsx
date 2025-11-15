@@ -58,7 +58,7 @@ const Index = () => {
     {
       image: heroSlide2,
       title: "Transform Your Enterprise",
-      subtitle: "Expert Oracle and Salesforce solutions driving digital transformation for leading organizations.",
+      subtitle: "Expert Oracle and Salesforce solutions driving digital transformation for organizations.",
     },
     {
       image: heroSlide3,
