@@ -90,7 +90,7 @@ const Careers = () => {
               <Card className="shadow-card">
                 <CardContent className="pt-6">
                   <p className="text-lg text-muted-foreground mb-4">
-                    At Nesnar, we believe in fostering a culture of innovation, collaboration, and continuous learning. Our team members work on challenging projects that make a real impact on leading organizations across the Middle East.
+                    At Nesnar, we believe in fostering a culture of innovation, collaboration, and continuous learning. Our team members work on challenging projects that make a real impact on leading organizations.
                   </p>
                   <p className="text-lg text-muted-foreground">
                     We invest in our people through training programs, certifications, and career development opportunities. Join us and be part of a team that values excellence, integrity, and innovation.
