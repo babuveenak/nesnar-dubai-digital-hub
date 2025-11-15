@@ -33,7 +33,6 @@ const Services = () => {
     title: "Salesforce Support",
     description: "Ongoing support, maintenance, and optimization services for your Salesforce environment."
   }];
-
   const mobilityServices = [{
     icon: <Smartphone className="w-10 h-10 text-primary" />,
     title: "Mobile App Development",
@@ -55,9 +54,7 @@ const Services = () => {
         <section className="bg-primary text-primary-foreground py-16">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
-            <p className="text-xl opacity-90 max-w-3xl">
-              Comprehensive Oracle and Salesforce solutions for enterprise transformation
-            </p>
+            <p className="text-xl opacity-90 max-w-3xl">Comprehensive Oracle, Salesforce and Mobile solutions for enterprise transformation</p>
           </div>
         </section>
 
