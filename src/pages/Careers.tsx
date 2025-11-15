@@ -15,7 +15,7 @@ const Careers = () => {
     {
       icon: <Globe className="w-10 h-10 text-primary" />,
       title: "Global Exposure",
-      description: "Work with international clients across UAE, GCC, and MENA regions",
+      description: "Work with international clients",
     },
     {
       icon: <Award className="w-10 h-10 text-primary" />,
