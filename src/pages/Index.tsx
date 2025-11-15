@@ -14,7 +14,7 @@ import heroSlide3 from "@/assets/hero-slide-3.jpg";
 import heroSlide4 from "@/assets/hero-slide-4.jpg";
 import oracleServices from "@/assets/oracle-services.png";
 import salesforceServices from "@/assets/salesforce-services.png";
-import digitalTransformation from "@/assets/digital-transformation.jpg";
+import digitalTransformation from "@/assets/digital-transformation.png";
 import managedServices from "@/assets/managed-services.jpg";
 const Index = () => {
   const services = [{
