@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import nesnarLogo from "@/assets/nesnar-logo.png";
-
 const Footer = () => {
-  return (
-    <footer className="bg-secondary border-t border-border">
+  return <footer className="bg-secondary border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -14,12 +12,7 @@ const Footer = () => {
               Software is complex. We make it simple.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="https://www.linkedin.com/in/nesnar-technologies-6a446610b/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
+              <a href="https://www.linkedin.com/in/nesnar-technologies-6a446610b/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -56,9 +49,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li className="text-muted-foreground">Oracle EBS</li>
-              <li className="text-muted-foreground">Oracle Fusion</li>
-              <li className="text-muted-foreground">Salesforce Solutions</li>
+              <li className="text-muted-foreground">Oracle  </li>
+              <li className="text-muted-foreground">Salesforce</li>
+              <li className="text-muted-foreground">Mobility Solutions</li>
               <li className="text-muted-foreground">Cloud Services</li>
             </ul>
           </div>
@@ -100,13 +93,9 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 text-center md:text-left">
-            License No. 735250 | Registration No. 1173693
-          </p>
+          
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
