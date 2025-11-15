@@ -11,7 +11,7 @@ const StatisticsCounter = () => {
   const statistics: Statistic[] = [
     { value: 20, label: "Projects Delivered", suffix: "+" },
     { value: 95, label: "Client Satisfaction", suffix: "%" },
-    { value: 15, label: "Countries Served", suffix: "+" },
+    { value: 5, label: "Countries Served", suffix: "+" },
     { value: 70, label: "Professionals", suffix: "+" },
   ];
 
