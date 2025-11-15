@@ -62,9 +62,7 @@ const Careers = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Why Choose Nesnar?</h2>
-              <p className="text-xl text-muted-foreground">
-                Be part of a dynamic team that's shaping the future of enterprise technology in the Middle East
-              </p>
+              <p className="text-xl text-muted-foreground">Be part of a dynamic team that's shaping the future of enterprise technology</p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
