@@ -25,7 +25,7 @@ const Careers = () => {
     {
       icon: <Users className="w-10 h-10 text-primary" />,
       title: "Collaborative Culture",
-      description: "Join a team of 70+ passionate professionals",
+      description: "Be part of a team of passionate professionals",
     },
   ];
 
