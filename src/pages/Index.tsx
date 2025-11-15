@@ -23,7 +23,7 @@ const Index = () => {
     {
       title: "Oracle Practice",
       icon: <img src={oracleCloudLogo} alt="Oracle Cloud" className="w-12 h-12" />,
-      description: "Oracle EBS Migration, Support & Upgrade, and Oracle Fusion ERP implementations across Financials, SCM, HCM, and Customer Applications.",
+      description: "Implementation of Oracle Fusion, Upgrades of Oracle EBS, Migration to Cloud Platforms, and Comprehensive ERP Support",
     },
     {
       title: "Salesforce Solutions",
