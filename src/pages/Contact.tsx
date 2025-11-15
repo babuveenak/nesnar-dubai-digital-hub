@@ -7,32 +7,38 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail } from "lucide-react";
-
 const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you soon.",
+      description: "Thank you for contacting us. We'll get back to you soon."
     });
-    setFormData({ name: "", email: "", phone: "", company: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      message: ""
+    });
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   };
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navigation />
 
       <main className="flex-1">
@@ -40,9 +46,7 @@ const Contact = () => {
         <section className="bg-primary text-primary-foreground py-16">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-            <p className="text-xl opacity-90 max-w-3xl">
-              Get in touch with our team to discuss your Oracle and Salesforce needs
-            </p>
+            <p className="text-xl opacity-90 max-w-3xl">Get in touch with our team to discuss your needs</p>
           </div>
         </section>
 
@@ -59,71 +63,35 @@ const Contact = () => {
                       <label htmlFor="name" className="block text-sm font-medium mb-2">
                         Full Name *
                       </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        placeholder="John Doe"
-                      />
+                      <Input id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="John Doe" />
                     </div>
 
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium mb-2">
                         Email Address *
                       </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        placeholder="john@company.com"
-                      />
+                      <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="john@company.com" />
                     </div>
 
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium mb-2">
                         Phone Number
                       </label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        placeholder="+971 XX XXX XXXX"
-                      />
+                      <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+971 XX XXX XXXX" />
                     </div>
 
                     <div>
                       <label htmlFor="company" className="block text-sm font-medium mb-2">
                         Company Name
                       </label>
-                      <Input
-                        id="company"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleChange}
-                        placeholder="Your Company"
-                      />
+                      <Input id="company" name="company" value={formData.company} onChange={handleChange} placeholder="Your Company" />
                     </div>
 
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium mb-2">
                         Message *
                       </label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                        rows={5}
-                        placeholder="Tell us about your project or requirements..."
-                      />
+                      <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={5} placeholder="Tell us about your project or requirements..." />
                     </div>
 
                     <Button type="submit" className="w-full" size="lg">
@@ -145,7 +113,9 @@ const Contact = () => {
                         <div>
                           <h3 className="font-semibold mb-1">Dubai Headquarters</h3>
                           <p className="text-muted-foreground">
-                            Nesnar Software Services LLC<br />
+                            Nesnar Software Services LLC
+Emirates Financial Towers, DIFC 
+Dubai, United Arab Emirates<br />
                             Emirates Financial Towers, DIFC, Dubai, United Arab Emirates
                           </p>
                         </div>
@@ -155,7 +125,7 @@ const Contact = () => {
                         <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                         <div>
                           <h3 className="font-semibold mb-1">Phone</h3>
-                          <p className="text-muted-foreground">+971 50 897 9544</p>
+                          <p className="text-muted-foreground">+971 508979544</p>
                         </div>
                       </div>
 
@@ -189,14 +159,7 @@ const Contact = () => {
                 </Card>
 
                 <Card className="shadow-card">
-                  <CardContent className="pt-6">
-                    <h3 className="font-semibold mb-3">License Information</h3>
-                    <div className="text-sm text-muted-foreground space-y-1">
-                      <p>License No. 735250</p>
-                      <p>Registration No. 1173693</p>
-                      <p>Established: 2015</p>
-                    </div>
-                  </CardContent>
+                  
                 </Card>
               </div>
             </div>
@@ -205,8 +168,6 @@ const Contact = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
