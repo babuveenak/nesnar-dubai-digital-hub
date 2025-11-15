@@ -128,7 +128,7 @@ Emirates 
                         <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                         <div>
                           <h3 className="font-semibold mb-1">Phone</h3>
-                          <p className="text-muted-foreground">+971 508979544</p>
+                          <p className="text-muted-foreground">+971 50 8979544</p>
                         </div>
                       </div>
 
