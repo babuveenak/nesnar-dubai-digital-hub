@@ -62,7 +62,7 @@ const Index = () => {
     },
     {
       image: heroSlide3,
-      title: "Cloud-Native Innovation",
+      title: "Cloud Native Innovation",
       subtitle: "Scalable cloud solutions and enterprise ERP implementations tailored to your business needs.",
     },
     {
