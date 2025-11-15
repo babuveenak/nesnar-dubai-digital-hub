@@ -19,7 +19,7 @@ const Services = () => {
     description: "Comprehensive support and upgrade services to keep your Oracle EBS running optimally and securely."
   }, {
     icon: <Layers className="w-10 h-10 text-primary" />,
-    title: "Oracle Fusion ERP",
+    title: "Oracle Fusion",
     description: "Full-scale implementations covering Financials, SCM, HCM, and Customer Applications modules."
   }];
   const salesforceServices = [{
