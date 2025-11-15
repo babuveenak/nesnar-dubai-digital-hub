@@ -20,16 +20,23 @@ const Contact = () => {
   });
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Construct mailto link with form data
+    const subject = encodeURIComponent(`Contact Form: ${formData.name} from ${formData.company || 'N/A'}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Phone: ${formData.phone}\n` +
+      `Company: ${formData.company}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    // Open email client
+    window.location.href = `mailto:sales@nesnar.com?subject=${subject}&body=${body}`;
+    
     toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you soon."
-    });
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      company: "",
-      message: ""
+      title: "Opening email client...",
+      description: "Your default email application will open with the message pre-filled.",
     });
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
