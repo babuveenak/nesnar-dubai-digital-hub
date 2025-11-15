@@ -20,7 +20,7 @@ const Careers = () => {
     {
       icon: <Award className="w-10 h-10 text-primary" />,
       title: "Cutting-Edge Technology",
-      description: "Work with the latest Oracle and Salesforce technologies",
+      description: "Work with Latest technologies",
     },
     {
       icon: <Users className="w-10 h-10 text-primary" />,
