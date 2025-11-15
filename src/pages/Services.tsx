@@ -11,7 +11,7 @@ import mobilityIcon from "@/assets/mobility-icon.png";
 const Services = () => {
   const oracleServices = [{
     icon: <Database className="w-10 h-10 text-primary" />,
-    title: "Oracle EBS Migration",
+    title: "Oracle Migration",
     description: "Seamless migration of your Oracle E-Business Suite to newer versions or cloud platforms with minimal disruption."
   }, {
     icon: <ArrowUpCircle className="w-10 h-10 text-primary" />,
