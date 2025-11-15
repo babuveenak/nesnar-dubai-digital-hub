@@ -26,7 +26,7 @@ const Index = () => {
       description: "Implementation of Oracle Fusion, Upgrades of Oracle EBS, Migration to Cloud Platforms, and Comprehensive ERP Support",
     },
     {
-      title: "Salesforce Solutions",
+      title: "Salesforce Practice",
       icon: <Cloud className="w-12 h-12 text-primary" />,
       description: "End-to-end Salesforce services including implementation, customization, integration, and ongoing support.",
     },
