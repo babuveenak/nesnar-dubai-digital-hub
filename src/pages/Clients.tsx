@@ -59,7 +59,7 @@ const Clients = () => {
         <section className="py-20 bg-secondary">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12">Client Success Stories</h2>
+              <h2 className="text-3xl font-bold text-center mb-12">Our Happy Customers</h2>
               
               <div className="grid md:grid-cols-3 gap-6 mb-12">
                 <Card className="text-center shadow-card">
