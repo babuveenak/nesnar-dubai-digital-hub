@@ -21,7 +21,7 @@ const Footer = () => {
               <a href="https://x.com/nesnartech?t=NbZRYS1DHURKqm_sNB5X2g&s=09" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="https://instagram.com/nesnar" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/nesnartechnologies?igsh=eGw4cm1qenEybjZl" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram size={20} />
               </a>
             </div>
