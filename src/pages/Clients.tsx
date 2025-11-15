@@ -2,10 +2,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, Users, Globe, TrendingUp } from "lucide-react";
-
 const Clients = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navigation />
 
       <main className="flex-1">
@@ -90,26 +88,7 @@ const Clients = () => {
               </div>
 
               <Card className="shadow-card">
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold mb-4">Regional Presence</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Nesnar Software Services has established a strong presence across the Middle East and beyond, serving clients in:
-                  </p>
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div>
-                      <h4 className="font-semibold mb-2">UAE</h4>
-                      <p className="text-sm text-muted-foreground">Dubai, Abu Dhabi, Sharjah</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">GCC Countries</h4>
-                      <p className="text-sm text-muted-foreground">Saudi Arabia, Kuwait, Qatar, Oman, Bahrain</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">MENA Region</h4>
-                      <p className="text-sm text-muted-foreground">Egypt, Jordan, Lebanon</p>
-                    </div>
-                  </div>
-                </CardContent>
+                
               </Card>
             </div>
           </div>
@@ -121,12 +100,7 @@ const Clients = () => {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-6">What Our Clients Say</h2>
               <Card className="shadow-card">
-                <CardContent className="pt-6">
-                  <p className="text-lg text-muted-foreground italic mb-4">
-                    "Nesnar's expertise in Oracle Fusion helped us streamline our entire finance operation. Their team's professionalism and technical knowledge exceeded our expectations."
-                  </p>
-                  <div className="font-semibold">Leading Manufacturing Company, UAE</div>
-                </CardContent>
+                
               </Card>
             </div>
           </div>
@@ -134,8 +108,6 @@ const Clients = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Clients;
