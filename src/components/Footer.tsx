@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Mail, Phone, MapPin, Facebook, Twitter, Instagram } from "lucide-react";
 import nesnarLogo from "@/assets/nesnar-logo.png";
 const Footer = () => {
   return <footer className="bg-secondary border-t border-border">
@@ -14,6 +14,15 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/in/nesnar-technologies-6a446610b/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={20} />
+              </a>
+              <a href="https://facebook.com/nesnar" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Facebook size={20} />
+              </a>
+              <a href="https://x.com/nesnar" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Twitter size={20} />
+              </a>
+              <a href="https://instagram.com/nesnar" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Instagram size={20} />
               </a>
             </div>
           </div>
