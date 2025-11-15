@@ -12,7 +12,7 @@ const StatisticsCounter = () => {
     { value: 20, label: "Projects Delivered", suffix: "+" },
     { value: 95, label: "Client Satisfaction", suffix: "%" },
     { value: 5, label: "Countries Served", suffix: "+" },
-    { value: 70, label: "Professionals", suffix: "+" },
+    { value: 30, label: "Professionals", suffix: "+" },
   ];
 
   const { ref, inView } = useInView({
