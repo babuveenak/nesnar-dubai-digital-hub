@@ -118,7 +118,7 @@ const Index = () => {
               return '';
             };
             return <Card key={service.title} className="shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden">
-                  <div className="h-38 bg-cover bg-center border-2 border-border" style={{
+                  <div className="h-48 bg-cover bg-center border-2 border-border" style={{
                 backgroundImage: `url(${getBackgroundImage()})`
               }} />
                   <CardContent className="pt-6">
